@@ -12,6 +12,7 @@ public class Cell {
     public boolean mine;
 
     public int neighbour_mines;
+    public boolean flagged;
 
     Cell(boolean mine){
         this.mine = mine;
@@ -26,8 +27,12 @@ public class Cell {
                     this.neighbour_mines += 1;
                 }
             }
-            this.checked = true;
+        check();
         }
+    }
+
+    void check(){
+        this.checked = true;
     }
 
     String to_text(){
@@ -35,11 +40,19 @@ public class Cell {
         if (checked){
             if (mine){
                 return "X";
+            } else if (neighbour_mines == 0) {
+                return " ";
             } else {
                 return ""+neighbour_mines;
             }
+        } else if (flagged) {
+            return "F";
         } else {
             return "?";
         }
+    }
+
+    public void flag() {
+        flagged = ! flagged;
     }
 }

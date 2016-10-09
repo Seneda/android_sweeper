@@ -26,7 +26,7 @@ public class GameBoard extends AppCompatActivity {
 
     public void reset(){
         setContentView(R.layout.activity_game_board);
-        this.mineField = new MineField(10, 6);
+        this.mineField = new MineField(15, 12);
         GridLayout grid = (GridLayout)findViewById(R.id.grid);
 
         grid.setColumnCount(this.mineField.cols);
@@ -39,7 +39,8 @@ public class GameBoard extends AppCompatActivity {
             for (int c = 0; c < this.mineField.cols; c++) {
                 Button b = new Button(this);
                 buttons[r][c] = b;
-                b.setWidth(10);
+                b.setMinimumWidth(0);
+                b.setWidth(63);
 //                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
 //                        LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 //                lp.width = ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -60,6 +61,16 @@ public class GameBoard extends AppCompatActivity {
                         }
 
                     }});
+
+                b.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View view){
+                        Log.d("", "Clicking button "+r_+" "+c_);
+                        mineField.cells[r_][c_].flag();
+                        redraw();
+                        return true;
+                        }
+                    } );
             }
         }
         redraw();
@@ -73,6 +84,14 @@ public class GameBoard extends AppCompatActivity {
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.setTitle("Game Over");
         alertDialog.setMessage("You Lose!");
+        alertDialog.show();
+    }
+
+    public void win_game(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.setTitle("Game Completed");
+        alertDialog.setMessage("Well Done!");
         alertDialog.show();
     }
 
@@ -90,7 +109,7 @@ public class GameBoard extends AppCompatActivity {
 
                 if ((cell.checked ))
                     if (cell.mine) {
-                        button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.red)));
+                        button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.dark_red)));
                     } else if (cell.neighbour_mines == 0) {
                         button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.green)));
                     } else if (cell.neighbour_mines == 1) {
@@ -101,8 +120,18 @@ public class GameBoard extends AppCompatActivity {
                         button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.dark_orange)));
                     } else {
                         button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.red)));
+                } else if (cell.flagged) {
+                    button.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.blue)));
                 }
             }
+        }
+        TextView t2 = (TextView)findViewById(R.id.no_flags);
+        t2.setText(""+mineField.flags());
+        TextView t1 = (TextView)findViewById(R.id.no_mines);
+        t1.setText(""+mineField.mines);
+
+        if ((mineField.unchecked_or_flagged() == 0) && (mineField.mines == mineField.flags())) {
+            win_game();
         }
     }
 

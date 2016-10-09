@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
+import java.util.logging.Logger;
 
 /**
  * Created by seneda on 08/10/16.
@@ -19,17 +20,23 @@ public class MineField
     int rows;
 
     int cols;
+    int mines;
 
     MineField(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
+        mines = 0;
         this.cells = new Cell[this.rows][this.cols];
         for (int c = 0; c < this.cols; c++){
             for (int r = 0; r < this.rows; r++){
                 this.cells[r][c] = new Cell(Math.random() > 0.9);
+                if (this.cells[r][c].mine) {
+                    mines += 1;
+                }
             }
         }
     }
+
 
     String to_text() {
         String text = "";
@@ -84,6 +91,7 @@ public class MineField
         // bottom right
         if ((row < this.rows-1) && (col < this.cols-1)) {
             neighbours.add(this.cells[row+1][col+1]);
+            neighbour_coords.add(new int[]{row+1, col+1});
         }
 
         this.cells[row][col].sweep(neighbours);
@@ -96,10 +104,33 @@ public class MineField
         }
     }
 
+    int flags(){
+        int flags = 0;
+        for (Cell[] cs: cells) {
+            for (Cell c: cs) {
+                if (c.flagged) {
+                    flags += 1;
+                    }
+                }
+            }
+        return flags;
+    }
+
+    int unchecked_or_flagged(){
+        int untouched = 0;
+        for (Cell[] cs: cells) {
+            for (Cell c: cs) {
+                if ((!c.checked) && (!c.flagged)) {
+                    untouched += 1;
+                }
+            }
+        }
+        return untouched;
+    }
+
     void sweep_all(){
         for (int r = 0; r < this.rows; r++){
             for (int c = 0; c < this.cols; c++){
-                Log.d("sweeping"+r+" "+c, this.to_text());
                 this.sweep(r, c);
             }
         }

@@ -3,6 +3,33 @@
 
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_1c46709bde06a7a9a62922b65e784c9f57892f02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_f692ab60c5c844cff47baf605d134712a8696a42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_75f1a2bb5ac9560ddd9979632fb4c1eb5c6d90d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -21,12 +48,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_77fefd78e2ccafab18608f922467b3ed8801a248/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_75fb69d32d8ec687505988dd93e3efd7c4a98159/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_db97c400db67650ef9a50b5eee7aa3a24b3e50a1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,6 +111,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d659eead67fb899d33f1f234f6b37192d6503038">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6735b2b9e1fb53c64af88858fe7ff1530d0bb8e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -75,12 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_ad5120563e4d8df21a61d0b679e9407afe301746/classes.dex" />
+        sha1="3a94a79db7268a2a4ff58195863f601893878224">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_205f89b09ed7f8cc567ca4a1268d45e46e4ad12a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,12 +147,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_ad5120563e4d8df21a61d0b679e9407afe301746/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="34d0340a8ab2b315ecd542e5970c884ac54e0cc7">
         <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_107c254130c3e4ed7dfd0c4c906dba4607bf0b94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_249205400dce3c7a3e51413109f9af5544bf58b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_622395ab7c0e00bba47c33ff1e8c647e8b35d4ca/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,12 +192,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_fec67e5a5f503f87b5f963cc6cb8368c1f5c26da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
         <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_969d72ab25447e6123d6bb6ea871adfec6b472c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_297efc728fd675df2577bb83a50746b108cd998f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_86fa2381b142dcfa69bbf0e609007f825bc76247/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_40329a3b2a5ebc47619f01c3eae501d11b883e96/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,6 +255,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_4bfb96f46c6909b58067ec167a7df4737a267376/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -147,12 +273,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_0d0c0de7d1030e6c7d1bbf21ab48eee75b9a3835/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/MineSweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_f8021344aa7da1670115d4afd04a3fdfdc047ecc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/media/seneda/25286637-3367-4d51-87d1-04b1dea3a742/AndroidStudioProjects/sweeper/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_82fd31aa8f7c8b87c5d916af3f975934fc5c90de/classes.dex" />
     </item>
 
 </items>

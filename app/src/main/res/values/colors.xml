@@ -7,5 +7,8 @@
     <color name="green">#00FF00</color>
     <color name="yellow">#FFFF00</color>
     <color name="orange">#FFBB00</color>
-    <color name="dark_orange">#FF8800</color>
+    <color name="dark_orange">#FF6600</color>
+    <color name="dark_red">#AA0000</color>
+
+    <color name="blue">#00AAFF</color>
 </resources>
