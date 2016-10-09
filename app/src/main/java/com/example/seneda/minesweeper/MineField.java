@@ -35,6 +35,7 @@ public class MineField
                 }
             }
         }
+        sweep_all();
     }
 
 
@@ -95,10 +96,57 @@ public class MineField
         }
 
         this.cells[row][col].sweep(neighbours);
+    }
+
+    void check(int row, int col){
+        List<Cell> neighbours = new ArrayList<Cell>();
+        List<int[]> neighbour_coords = new ArrayList<int[]>();
+        // top left
+        if ((row > 0) && (col > 0)) {
+            neighbours.add(this.cells[row-1][col-1]);
+            neighbour_coords.add(new int[]{row-1, col-1});
+        }
+        // top
+        if (row > 0) {
+            neighbours.add(this.cells[row-1][col]);
+            neighbour_coords.add(new int[]{row-1, col});
+        }
+        // top right
+        if ((row > 0) && (col < this.cols-1)) {
+            neighbours.add(this.cells[row-1][col+1]);
+            neighbour_coords.add(new int[]{row-1, col+1});
+        }
+        // left
+        if (col > 0) {
+            neighbours.add(this.cells[row][col-1]);
+            neighbour_coords.add(new int[]{row, col-1});
+        }
+        // right
+        if (col < this.cols-1) {
+            neighbours.add(this.cells[row][col+1]);
+            neighbour_coords.add(new int[]{row, col+1});
+        }
+        // bottom left
+        if ((row < this.rows-1) && (col > 0)) {
+            neighbours.add(this.cells[row+1][col-1]);
+            neighbour_coords.add(new int[]{row+1, col-1});
+        }
+        // bottom
+        if (row < this.rows-1) {
+            neighbours.add(this.cells[row+1][col]);
+            neighbour_coords.add(new int[]{row+1, col});
+        }
+        // bottom right
+        if ((row < this.rows-1) && (col < this.cols-1)) {
+            neighbours.add(this.cells[row+1][col+1]);
+            neighbour_coords.add(new int[]{row+1, col+1});
+        }
+
+        this.cells[row][col].check();
         if (this.cells[row][col].neighbour_mines == 0){
             for (int[] coord: neighbour_coords) {
                 if (! this.cells[coord[0]][coord[1]].checked) {
-                    this.sweep(coord[0], coord[1]);
+                    this.check(coord[0], coord[1]);
                 }
             }
         }
@@ -132,6 +180,13 @@ public class MineField
         for (int r = 0; r < this.rows; r++){
             for (int c = 0; c < this.cols; c++){
                 this.sweep(r, c);
+            }
+        }
+    }
+    void check_all(){
+        for (int r = 0; r < this.rows; r++){
+            for (int c = 0; c < this.cols; c++){
+                this.check(r, c);
             }
         }
     }

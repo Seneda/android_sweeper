@@ -27,7 +27,6 @@ public class Cell {
                     this.neighbour_mines += 1;
                 }
             }
-        check();
         }
     }
 

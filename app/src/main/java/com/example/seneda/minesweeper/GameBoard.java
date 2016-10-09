@@ -53,10 +53,10 @@ public class GameBoard extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Log.d("", "Clicking button "+r_+" "+c_);
-                        mineField.sweep(r_, c_);
+                        mineField.check(r_, c_);
                         redraw();
                         if (mineField.cells[r_][c_].mine){
-                            sweep();
+                            check_all();
                             end_game();
                         }
 
@@ -140,15 +140,11 @@ public class GameBoard extends AppCompatActivity {
     }
 
 
-    public void sweep(){  //}, int row, int col){
-        Log.d("", "Sweeping all");
+    public void check_all(){  //}, int row, int col){
+        Log.d("", "Checking all");
         Log.d("", this.mineField.to_text());
-        this.mineField.sweep_all();
+        this.mineField.check_all();
         Log.d("", this.mineField.to_text());
         redraw();
-    }
-
-    public void sweep(View v){
-        sweep();
     }
 }

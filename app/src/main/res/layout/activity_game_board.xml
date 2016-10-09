@@ -40,6 +40,9 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
+            
+            <Space
+                android:layout_width="100px"/>
 
             <TextView
                 android:text="Mines Remaining"
@@ -60,6 +63,10 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
+
+
+            <Space
+                android:layout_width="100px"/>
 
             <TextView
                 android:text="0"
